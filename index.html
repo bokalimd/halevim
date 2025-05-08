@@ -14,7 +14,7 @@
             const paramName = "p"; // Change this to your desired parameter name
             const paramValue = getParameterByName(paramName);
             if (paramValue) {
-                const newUrl = "http://operationskyvalley.com/" + encodeURIComponent(paramValue);
+                const newUrl = "http://operationskyvalley.com/" + encodeURI(paramValue);
 				
                 window.location.href = newUrl;
             } else {
